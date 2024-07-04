@@ -1,0 +1,36 @@
+Informe del Proyecto: Análisis del Terreno Agrícola Santiago De Cuba
+
+1. Problemática:
+La agricultura es una actividad fundamental para la economía y la seguridad alimentaria. Sin embargo, la gestión eficiente de los terrenos agrícolas puede ser un desafío debido a la variabilidad en la fertilidad del suelo, los insumos necesarios y la producción esperada. La problemática principal es identificar qué terrenos son más adecuados para ciertos cultivos, optimizando así el uso de recursos y maximizando la producción.
+
+2. Modelo Computacional Utilizado:
+Para abordar esta problemática, se ha utilizado un modelo de clustering no supervisado, específicamente el algoritmo K-Means. Este algoritmo agrupa los datos en clusters basados en características similares, en este caso, los insumos necesarios y la producción esperada.
+
+3. Importancia del Modelo:
+El uso de un modelo de clustering como K-Means es crucial en este contexto porque permite:
+- Identificar patrones ocultos en los datos sin necesidad de etiquetas predefinidas.
+- Agrupar terrenos similares, facilitando la toma de decisiones sobre qué cultivos plantar en cada terreno.
+- Optimizar recursos al recomendar terrenos que requieren insumos similares y tienen producciones esperadas comparables.
+
+4. Pasos Utilizados para Crear el Modelo:
+
+1- Recopilación de Datos:
+   - Se creó una base de datos con información sobre diferentes parcelas, incluyendo el tipo de cultivo, los insumos necesarios, la producción esperada y la fertilidad del suelo.
+
+2- Preprocesamiento de Datos:
+   - Los datos se organizaron en un DataFrame utilizando la biblioteca “pandas”.
+
+3- Selección de Características:
+   - Se seleccionaron las características relevantes para el clustering: “insumos” y “producción”.
+
+4- Aplicación del Algoritmo K-Means:
+   - Se aplicó el algoritmo K-Means con 3 clusters para agrupar los terrenos según sus características.
+
+5- Asignación de Clusters:
+   - Cada terreno se asignó a un cluster basado en los resultados del algoritmo K-Means.
+
+6- Desarrollo de la Interfaz Gráfica:
+   - Se creó una interfaz gráfica utilizando “tkinter” para permitir a los usuarios seleccionar un cultivo y obtener recomendaciones sobre los terrenos más adecuados.
+
+7- Funcionalidad de Recomendación:
+   - Se implementaron funciones para obtener recomendaciones basadas en el cluster al que pertenece el cultivo seleccionado.
